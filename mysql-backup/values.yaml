@@ -15,6 +15,9 @@ schedule: "0 3 * * *"
 # Dump each database to a separate file
 dumpBySchema: true
 
+# Retention time as stated in https://github.com/databacker/mysql-backup/blob/master/docs/prune.md#backup-runs
+retention: 1c
+
 # cronjob history
 successfulJobsHistoryLimit: 5
 failedJobsHistoryLimit: 5
