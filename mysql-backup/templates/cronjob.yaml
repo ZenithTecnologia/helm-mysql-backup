@@ -42,6 +42,10 @@ spec:
                 value: "true"
               - name: DB_DUMP_DEBUG
                 value: "true"
+              - name: DB_DUMP_FREQ
+                value: ""
+              - name: DB_DUMP_BEGIN
+                value: ""
               - name: DB_SERVER
                 value: {{ .Values.mysql.host | quote }}
               - name: DB_USER
