@@ -8,21 +8,7 @@ Helm chart to install cronjob to backup database(s) base on docker container fro
 1. Install repo:
 
 ```
-helm repo add mysql-backup https://obukhov.github.io/helm-mysql-backup/
-```
-
-2. Install release depending on your helm version:
-
-helm2:
-
-```
-helm install --name <release name> -n <namespace> -f ./values.yaml --version 0.0.1 mysql-backup/mysql-backup
-```
-
-helm3:
-
-```
-helm upgrade --install --atomic -n <namespace> -f ./values.yaml --version 0.1.1 <release name> mysql-backup/mysql-backup
+helm repo add mysql-backup https://zenithtecnologia.github.io/helm-mysql-backup/
 ```
 
 ## Configuration
